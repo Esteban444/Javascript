@@ -3,29 +3,48 @@ Desarrollar un algoritmo que pida la edad y el sexo y dependiendo de si es hombr
 mujer y si puede votar o no.
 
 */
+var nombre;
+var edad;
+var genero;
 
-var Nombre;
-var Edad;
-var Genero;
+nombre = prompt('Ingrese el nombre de la persona.', '');
+edad = prompt('Ingrese la edad de la persona.', '');
+genero = prompt('Ingrese el genero de la persona "femenino" o  "masculino" ', '');
 
-Nombre = prompt('Ingrese el nombre de la persona.', '');
-Edad = prompt('Ingrese la edad de la persona.', '');
-Genero = prompt('Ingrese el genero de la persona "F" para femenino y "M" para masculino.', '');
+if (edad < 18) {
+    if (genero === "femenino") {
+        console.log("Usted es menor de edad no puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
 
-if (Edad < 18) {
-    if ((Edad < 18) && (Genero = "F")) {
-        console.log('Usted es menor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'No puede votar.');
-        document.write('Usted es menor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'No puede votar.');
+        alert("Usted es menor de edad no puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
     } else {
-        console.log('Usted es menor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'No puede votar.');
-        document.write('Usted es menor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'No puede votar.');
+        console.log("Usted es menor de edad no puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
+
+        alert("Usted es menor de edad no puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
     }
-} else if (Edad >= 18) {
-    if ((Edad >= 18) && (Genero = "F")) {
-        console.log('Usted es mayor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'Puede votar.');
-        document.write('Usted es mayor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'Puede votar.');
+} else
+
+if (edad >= 18) {
+    if (genero === "femenino") {
+        console.log("Usted es mayor de edad puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
+        alert("Usted es mayor de edad puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
     } else {
-        console.log('Usted es mayor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'Puede votar.');
-        document.write('Usted es mayor de edad su nombre es:', " ", Nombre, " ", Edad, " ", 'Años', " ", 'Puede votar.');
+        console.log("Usted es mayor de edad puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
+        alert("Usted es mayor de edad puede votar eres: " + " " +
+            " " + nombre + " " + "tienes" + " " + edad + " " + "Años" + " " + "Eres del genero" +
+            " " + genero);
     }
 }
